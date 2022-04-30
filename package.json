@@ -1,0 +1,15 @@
+{
+  "name": "bike-reservio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "concurrently \"cd frontend && yarn install\" \"cd backend && yarn install\"",
+    "start": "concurrently \"cd frontend && yarn start\" \"cd backend && yarn start:dev\"",
+    "test": "concurrently \"cd frontend && yarn test\" \"cd backend && yarn test\"",
+    "lint": "concurrently \"cd frontend && yarn lint\" \"cd backend && yarn lint\"",
+    "pretty": "concurrently \"cd frontend && yarn pretty\" \"cd backend && yarn pretty\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}

@@ -1,0 +1,65 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'airbnb',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+    'comma-dangle': 'off',
+    'object-curly-newline': 'off',
+    'import/prefer-default-export': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': 'off',
+    'arrow-body-style': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'react/jsx-curly-newline': 'off',
+    'operator-linebreak': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'no-confusing-arrow': 'off',
+    'function-paren-newline': 'off',
+    'no-param-reassign': 'off',
+    'react/no-array-index-key': 'off',
+    'no-unused-vars': 'warn',
+    'no-shadow': 'off',
+    'no-nested-ternary': 'off',
+    indent: 'off',
+    'react/require-default-props': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
+};
